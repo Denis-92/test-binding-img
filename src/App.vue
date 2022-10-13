@@ -7,7 +7,7 @@
 
       <p> test text: {{ elements.url }} </p>
 
-      <img :src="elements.url" alt="img-not-display">
+      <img :src="require(elements.url)" alt="img-not-display">
     </h2>
 
   </div>
