@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <h1>TEST</h1>
+
+    <h2 v-for="elements in link" :key="elements.url">
+
+      <p> test text: {{ elements.url }} </p>
+
+      <img :src="elements.url" alt="img-not-display">
+    </h2>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { link } from '@/assets/link.js';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      link,
+    }
   }
 }
 </script>
 
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+h2 {
+  background-color: aqua;
 }
 </style>
