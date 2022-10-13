@@ -9,13 +9,6 @@
 
       <img :src=elements.url alt="img-not-display">
 
-      <!-- :src="require(elements.url)" DA WARNING E ROMPE IL DISPLAY DELLA PAGINA -->
-
-    </h2>
-
-    <h2>
-      <!-- QUESTO FUNZIONA MA NON MI PERMETTE DI PASSARE CON IL V-FOR L'INDIRIZZO DELLE IMMAGINI DINAMICAMENTE CON UNA VARIABILE -->
-      <img :src="require('@/assets/foto1.png')" alt="immagine1">
     </h2>
 
   </div>

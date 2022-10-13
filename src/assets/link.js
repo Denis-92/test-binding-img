@@ -1,11 +1,11 @@
 export const link = [
 
-    { "url": "@/assets/foto1.png" },
+    { "url": "img/foto1.png" },
 
-    { "url": "@/assets/foto2.png" },
+    { "url": "img/foto2.png" },
 
-    { "url": "@/assets/foto3.jpg" },
+    { "url": "img/foto3.jpg" },
 
-    { "url": "@/assets/logo.png" },
+    { "url": "img/logo.png" },
 
 ]
